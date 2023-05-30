@@ -42,6 +42,6 @@ app.use(
 conn
   .sync()
   .then(() => {
-    app.listen(3000);
+    app.listen(3333);
   })
   .catch((err) => console.log(err));
