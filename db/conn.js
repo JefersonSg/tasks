@@ -1,7 +1,7 @@
 const { Sequelize } = require('sequelize');
 
 const sequelize = new Sequelize('nodemvc', 'root', '', {
-  host: 'localhost',
+  host: '34.173.171.235',
   dialect: 'mysql',
 });
 
