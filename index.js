@@ -12,6 +12,7 @@ const Task = require('./models/Task');
 
 // Routes
 const taskRoutes = require('./routes/tasksRoutes');
+const TaskController = require('./controllers/TaskController');
 
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
@@ -27,6 +28,7 @@ app.use(express.json());
 app.use(express.static('./public'));
 
 app.use('/tasks', taskRoutes);
+app.get('/', TaskController.showTasks);
 
 app.use(
   '/tasks/css',

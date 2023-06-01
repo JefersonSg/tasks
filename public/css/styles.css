@@ -17,6 +17,7 @@
 #navbar ul {
   display: flex;
   list-style: none;
+  margin: 0 auto;
 }
 
 #navbar ul li {
@@ -31,6 +32,8 @@
 .container {
   max-width: 450px;
   margin: 2em auto;
+  display: grid;
+  place-items: center;
 }
 
 .container form {
